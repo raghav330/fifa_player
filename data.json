@@ -1,0 +1,17 @@
+[
+{"id": "C. Eriksen(ID: 190460)", "full_name": "Christian  Dannemann Eriksen", "positions": ["CAM", "RM", "CM"]},
+{"id": "L. Messi(ID: 158023)", "full_name": "Lionel Andr\u00e9s Messi Cuccittini", "positions": ["CF", "RW", "ST"]},
+{"id": "P. Pogba(ID: 195864)", "full_name": "Paul Pogba", "positions": ["CM", "CAM"]},
+{"id": "P. Aubameyang(ID: 188567)", "full_name": "Pierre-Emerick Aubameyang", "positions": ["ST", "LM"]},
+{"id": "K. Koulibaly(ID: 201024)", "full_name": "Kalidou Koulibaly", "positions": ["CB"]},
+{"id": "V. van Dijk(ID: 203376)", "full_name": "Virgil van Dijk", "positions": ["CB"]},
+{"id": "L. Insigne(ID: 198219)", "full_name": "Lorenzo Insigne", "positions": ["LW", "ST"]},
+{"id": "Coutinho(ID: 189242)", "full_name": "Philippe Coutinho Correia", "positions": ["LW", "RW", "CM"]},
+{"id": "M. Neuer(ID: 167495)", "full_name": "Manuel Neuer", "positions": ["GK"]},
+{"id": "S. Ag\u00fcero(ID: 153079)", "full_name": "Sergio Leonel Ag\u00fcero del Castillo", "positions": ["ST"]},
+{"id": "E. Cavani(ID: 179813)", "full_name": "Edinson Roberto Cavani G\u00f3mez", "positions": ["ST"]},
+{"id": "K. Mbapp\u00e9(ID: 231747)", "full_name": "Kylian Mbapp\u00e9", "positions": ["RW", "ST", "RM"]},
+{"id": "A. Griezmann(ID: 194765)", "full_name": "Antoine Griezmann", "positions": ["CF", "ST"]},
+{"id": "T. Courtois(ID: 192119)", "full_name": "Thibaut Courtois", "positions": ["GK"]},
+{"id": "M. ter Stegen(ID: 192448)", "full_name": "Marc-Andr\u00e9 ter Stegen", "positions": ["GK"]},
+{"id": "Sergio Busquets(ID: 189511)", "full_name": "Sergio Busquets i Burgos", "positions": ["CDM", "CM"]}
