@@ -6,6 +6,27 @@
 # https://doc.scrapy.org/en/latest/topics/spider-middleware.html
 
 from scrapy import signals
+from scrapy.downloadermiddlewares.useragent import UserAgentMiddleware
+import random
+import logging
+
+
+class UserAgentRotatorMiddleware(UserAgentMiddleware):
+    user_agents_list = [
+        'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) Appl eWebKit/603.3.8 (KHTML, like Gecko) Version/10.1.2 Safari/603.3.8',
+        'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) Appl eWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.27 43.116 Safari/537.36',
+        'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_2) Appl eWebKit/601.3.9 (KHTML, like Gecko)',
+    ]
+
+    def __init__(self, user_agent=''):
+        self.user_agent = user_agent
+
+    def process_request(self, request, spider):
+        try:
+            self.user_agent = random.choice(self.user_agents_list)
+            request.headers.setdefault('User-Agent', self.user_agent)
+        except IndexError:
+            logging.error("Couldn't fetch the user agent")
 
 
 class FifaSpiderMiddleware(object):
