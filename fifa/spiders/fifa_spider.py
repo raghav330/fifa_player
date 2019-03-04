@@ -31,6 +31,7 @@ class FifaSpider(scrapy.Spider):
 
             'id': extract_with_css("div.info h1::text"),
             'full_name': extract_with_css("div.meta::text"),
+            'nationality': extract_with_css("div.meta a::attr(title)"),
             'positions': extract_with_css("div.meta span::text", getall=True),
             'b_h_w': extract_with_css("div.meta::text", getall=True)[-1],
 
@@ -102,6 +103,8 @@ class FifaSpider(scrapy.Spider):
             'GK_reflexes': extract_with_xpath("//div[@class='mb-2'][2]/div[3]//ul/li[5]/span[1]/text()"),
 
             'tags': extract_with_xpath("//div[@class='teams']/div[2]/a/text()", extract_all=True),
+
+            'traits': extract_with_xpath("//div[@class='mb-2'][2]/div[4]//ul/li/span/text()", extract_all=True),
 
             'LS': extract_with_xpath("//div[@class='columns mb-2'][1]/div[2]/text()[2]"),
             'ST': extract_with_xpath("//div[@class='columns mb-2'][1]/div[3]/text()[2]"),
