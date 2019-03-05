@@ -1,5 +1,6 @@
 *.json
-*.txt
+
 *.csv
 
 rough_work.py
+
