@@ -2,5 +2,7 @@
 
 *.csv
 
+*.ipynb*
+
 rough_work.py
 
